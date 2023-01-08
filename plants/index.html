@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Task markup Plants">
+  <title>Plants</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/leaf.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+  <link rel="stylesheet" href="./style.css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="header container">        
+      <a href="./index.html" class="logo link">
+            <span class="logo__icon"><svg class="icon-logo" width="20" height="20">
+                <use href="./images/icons.svg#icon-logo"></use>
+              </svg></span>Plants
+        </a>
+      <nav class="header__nav">
+
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a href="./index.html" class="nav-list__link link nav-list__link--active">Home</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#about" class="nav-list__link link">About us</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#service" class="nav-list__link link">Service</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#prices" class="nav-list__link link">Price</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#contacts" class="nav-list__link link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- mobile menu -->
+      <button class="menu-open" data-menu-open>
+        <svg class="menu-burger" width="24" height="16">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+        </button>
+      <div class="mob-menu is-hidden" data-menu>
+          <button class="menu-close" data-menu-close>
+            <svg class="menu-close" width="40" height="40">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="nav-list__item">
+              <a href="./index.html" class="nav-list__link link">Home</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#about" class="nav-list__link link">About us</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#service" class="nav-list__link link">Service</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#prices" class="nav-list__link link">Price</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#contacts" class="nav-list__link link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <div class="container">
+        
+        <div class="welcome__describe">
+          <h1 class="welcome__title">
+            We grow <span class="welcome__title--green">plants</span> and
+            give you oxygen
+          </h1>
+          <p class="welcome__text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s.
+          </p>
+          <button type="button" class="welcome__button button" data-modal-open>
+            LEARN MORE
+          </button>
+        </div>
+
+        <img class="welcome__img" 
+        srcset="./images/leafs-hero.png 448w, ./images/leafs-hero@2x.png 896w"
+          sizes="(min-width: 1440px) 448w, 100vw" src="./images/leafs-hero.png" 
+          alt="Leafs"
+          width="448" 
+          height="407">
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="about__describe">
+          <h2 class="about__title">
+            We are
+            <span class="about__title--orange">professional experienced</span>
+            gardeners
+          </h2>
+          <p class="about__text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book. It has
+            survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged.
+          </p>
+        </div>
+
+        <img class="about__img" srcset="./images/houseplant.png 464w, ./images/houseplant@2x.png 928w"
+          sizes="(min-width: 1440px) 464px, 100vw" 
+          src="./images/houseplant.png" width="464" height="479"
+          alt="houseplant">
+      </div>
+    </section>
+    <section id="service" class='service'>
+      <div class="container">
+
+        <div class="service__describe">
+          <h2 class="service__title">Service and our projects</h2>
+          <ul class="service__button-list">
+            <lI><button class="button service__button-item">Gardens</button></lI>
+            <lI><button class="button service__button-item">Lawn</button></lI>
+            <lI><button class="button service__button-item">Planting</button></lI>
+          </ul>
+        </div>
+
+        <ul class="service__cards-list">
+
+          <li class="service__cards-item"> 
+            <img class="service__img"
+              srcset="./images/service-desktop-01.jpg 329w, ./images/service-desktop-01@2x.jpg 658w"
+              sizes="(min-width: 1440px) 329px, 100vw" src="./images/service-desktop-01.jpg" width="329" height="350" alt="Garden">
+            <div class="service__cards-describe">
+              <h3 class="service__card-title">Garden care</h3>
+              <p class="service__card-title">Lorem Ipsum has been the industry</p>
+            </div>
+
+          </li>
+          <li class="service__cards-item">
+            <img class="service__img"
+              srcset="./images/service-desktop-02.jpg 329w, ./images/service-desktop-02@2x.jpg 658w"
+              sizes="(min-width: 1440px) 329px, 100vw" src="./images/service-desktop-02.jpg" width="329" height="350"
+              alt="Planting">
+            <div class="service__cards-describe">
+              <h3 class="service__card-title">Planting</h3>
+              <p class="service__card-text">Lorem Ipsum has been the industry</p>
+            </div>
+          </li>
+          <li class="service__cards-item">
+            <img class="service__img"
+              srcset="./images/service-desktop-03.jpg 329w, ./images/service-desktop-03@2x.jpg 658w"
+              sizes="(min-width: 1440px) 329px, 100vw" src="./images/service-desktop-03.jpg" width="329" height="350"
+              alt="Lawn care">
+            <div class="service__cards-describe">
+              <h3 class="service__card-title">Lawn care</h3>
+              <p class="service__card-text">Lorem Ipsum has been the industry</p>
+            </div>
+          </li>
+          <li class="service__cards-item">
+            <img class="service__img"
+              srcset="./images/service-desktop-04.jpg 329w, ./images/service-desktop-04@2x.jpg 658w"
+              sizes="(min-width: 1440px) 329px, 100vw" src="./images/service-desktop-04.jpg" width="329" height="350"
+              alt="Planting">
+            <div class="service__cards-describe">
+              <h3 class="service__card-title">Planting</h3>
+              <p class="service__card-text">Lorem Ipsum has been the industry</p>
+            </div>
+          </li>
+          <li class="service__cards-item">
+            <img class="service__img"
+              srcset="./images/service-desktop-05.jpg 329w, ./images/service-desktop-05@2x.jpg 658w"
+              sizes="(min-width: 1440px) 329px, 100vw" src="./images/service-desktop-05.jpg" width="329" height="350"
+              alt="Garden care">
+            <div class="service__cards-describe">
+              <h3 class="service__card-title">Garden care</h3>
+              <p class="service__card-text">Lorem Ipsum has been the industry</p>
+            </div>
+          </li>
+          <li class="service__cards-item">
+            <img class="service__img"
+              srcset="./images/service-desktop-06.jpg 329w, ./images/service-desktop-06@2x.jpg 658w"
+              sizes="(min-width: 1440px) 329px, 100vw" src="./images/service-desktop-06.jpg" width="329" height="350"
+              alt="Planting">
+            <div class="service__cards-describe">
+              <h3 class="service__card-title">Planting</h3>
+              <p class="service__card-text">Lorem Ipsum has been the industry</p>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+    <section id="prices" class='prices'>
+      <div class="container">
+
+        <div class="prices__filter">
+          <h2 class="prices__title">Prices</h2>
+          <ul class="prices__button-list">
+            <li class="prices__button-item">
+              <p class="prices__button-title">Basics</p>
+              <button type="button" class="prices__button-dropdown" aria-label="open drop-down menu">
+                <svg
+                  class="prices__button-icon" width="8" height="8">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="prices__button-item">
+              <p class="prices__button-title">Standard</p><button type="button" class="prices__button-dropdown" aria-label="open dropdown menu"><svg
+                  class="prices__button-icon" width="8" height="8">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg></button>
+            </li>
+            <li class="prices__button-item">
+              <p class="prices__button-title">Pro care</p><button type="button" class="prices__button-dropdown" aria-label="open dropdown menu"><svg
+                  class="prices__button-icon" width="8" height="8">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg></button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="prices__contacts">
+          <p class="prices__text">Our best <span class="prices__text--green">gardeners</span> are ready to help you</p>
+          <button type="button" class="button prices__contact-button">Contact us</button>
+          <img class="prices__img" srcset="./images/leafs-prices.png 152w, ./images/leafs-prices@2x.png 304w"
+            sizes="(min-width: 1440px) 152px, 100vw" src="./images/leafs-prices.png" width="152" height="175"
+            alt="Leafs">
+        </div>
+
+      </div>
+    </section>
+    <section id="contacts" class='contacts'>
+      <div class="container">
+
+        <div class="contacts__describe">
+          <h2 class="contacts__title">Contact us</h2>
+
+          <div class="contacts__box-overlay">
+            <p class="contacts__overlay-name">City</p>
+            <button type="button" class="contacts__overlay-button" aria-label="open dropdown menu">
+              <svg class="contacts__button-icon" width="4" height="3">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+
+            <ul class="contacts__overlay-city">
+              <li class="contacts__overlay-item">
+                <p class="contacts__overlay-text">Canandaigua, NY</p>
+              </li>
+              <li class="contacts__overlay-item">
+                <p class="contacts__overlay-text">New York City</p>
+              </li>
+              <li class="contacts__overlay-item">
+                <p class="contacts__overlay-text">Yonkers, NY</p>
+              </li>
+              <li class="contacts__overlay-item">
+                <p class="contacts__overlay-text">Sherrill, NY</p>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <img srcset="./images/contact_woman.png 464w, ./images/contact_woman@2x.png 928w"
+        sizes="(min-width: 1440px) 464px, 100vw" src="./images/contact_woman.png" width="400" height="497"
+        alt="woman">
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__text-content">
+        <p class="footer__text"><span class="copyright">&copy;</span> 2023</p>
+        <a class="footer__link link" href="https://github.com/Aleksayshn/" target="_blank"
+          rel="noreferrer noopener nofollow">github</a>
+      </div>
+      <a class="footer__main-link link" href="https://rs.school/js-stage0/" target="_blank"
+        rel="noreferrer noopener nofollow">Rolling Scopes School</a>
+      <ul class="socpublic list-style">
+        <li class="socpublic-item">
+          <a href="https://www.instagram.com/" class="socpublic-link footer-icon link" target="_blank"
+            rel="noreferrer noopener nofollow" aria-label="instagram">
+            <svg class="icon-socpublic" width="32" height="32">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="socpublic-item">
+          <a href="https://www.facebook.com/" class="socpublic-link footer-icon link" target="_blank"
+            rel="noreferrer noopener nofollow" aria-label="facebook">
+            <svg class="icon-socpublic" width="32" height="32">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socpublic-item">
+          <a href="https://www.twitter.com/" class="socpublic-link footer-icon link" target="_blank"
+            rel="noreferrer noopener nofollow" aria-label="twitter">
+            <svg class="icon-socpublic" width="32" height="32">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socpublic-item">
+          <a href="https://www.pinterest.com/" class="socpublic-link footer-icon link" target="_blank"
+            rel="noreferrer noopener nofollow" aria-label="pinterest">
+            <svg class="icon-socpublic" width="32" height="32">
+              <use href="./images/icons.svg#icon-pinterest"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script defer src="./js/mobile-menu.js"></script>
+  <script defer src="./js/index.js"></script>
+</body>
+
+</html>
