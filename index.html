@@ -19,12 +19,12 @@
 <body>
 
   <header>
-    <div class="header container">        
+    <div class="header container">
       <a href="./index.html" class="logo link">
-            <span class="logo__icon"><svg class="icon-logo" width="20" height="20">
-                <use href="./images/icons.svg#icon-logo"></use>
-              </svg></span>Plants
-        </a>
+        <span class="logo__icon"><svg class="icon-logo" width="20" height="20">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg></span>Plants
+      </a>
       <nav class="header__nav">
 
         <ul class="nav-list">
@@ -51,38 +51,38 @@
         <svg class="menu-burger" width="24" height="16">
           <use href="./images/icons.svg#icon-burger"></use>
         </svg>
-        </button>
+      </button>
       <div class="mob-menu is-hidden" data-menu>
-          <button class="menu-close" data-menu-close>
-            <svg class="menu-close" width="40" height="40">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-          <ul class="mob-menu-list list">
-            <li class="nav-list__item">
-              <a href="./index.html" class="nav-list__link link">Home</a>
-            </li>
-            <li class="nav-list__item">
-              <a href="#about" class="nav-list__link link">About us</a>
-            </li>
-            <li class="nav-list__item">
-              <a href="#service" class="nav-list__link link">Service</a>
-            </li>
-            <li class="nav-list__item">
-              <a href="#prices" class="nav-list__link link">Price</a>
-            </li>
-            <li class="nav-list__item">
-              <a href="#contacts" class="nav-list__link link">Contacts</a>
-            </li>
-          </ul>
-        </div>
+        <button class="menu-close" data-menu-close>
+          <svg class="menu-close" width="40" height="40">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu-list list">
+          <li class="nav-list__item">
+            <a href="./index.html" class="nav-list__link link">Home</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#about" class="nav-list__link link">About us</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#service" class="nav-list__link link">Service</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#prices" class="nav-list__link link">Price</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#contacts" class="nav-list__link link">Contacts</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
 
   <main>
     <section class="welcome">
       <div class="container">
-        
+
         <div class="welcome__describe">
           <h1 class="welcome__title">
             We grow <span class="welcome__title--green">plants</span> and
@@ -98,12 +98,8 @@
           </button>
         </div>
 
-        <img class="welcome__img" 
-        srcset="./images/leafs-hero.png 448w, ./images/leafs-hero@2x.png 896w"
-          sizes="(min-width: 1440px) 448w, 100vw" src="./images/leafs-hero.png" 
-          alt="Leafs"
-          width="448" 
-          height="407">
+        <img class="welcome__img" srcset="./images/leafs-hero.png 448w, ./images/leafs-hero@2x.png 896w"
+          sizes="(min-width: 1440px) 448px, 100vw" src="./images/leafs-hero.png" alt="Leafs" width="448" height="407">
       </div>
     </section>
 
@@ -127,8 +123,7 @@
         </div>
 
         <img class="about__img" srcset="./images/houseplant.png 464w, ./images/houseplant@2x.png 928w"
-          sizes="(min-width: 1440px) 464px, 100vw" 
-          src="./images/houseplant.png" width="464" height="479"
+          sizes="(min-width: 1440px) 464px, 100vw" src="./images/houseplant.png" width="464" height="479"
           alt="houseplant">
       </div>
     </section>
@@ -137,26 +132,29 @@
 
         <div class="service__describe">
           <h2 class="service__title">Service and our projects</h2>
+
           <ul class="service__button-list">
-            <lI><button class="button service__button-item">Gardens</button></lI>
-            <lI><button class="button service__button-item">Lawn</button></lI>
-            <lI><button class="button service__button-item">Planting</button></lI>
+            <lI><button class="button service__button-item" data-name="garden">Gardens</button></lI>
+            <lI><button class="button service__button-item" data-name="lawn">Lawn</button></lI>
+            <lI><button class="button service__button-item" data-name="planting">Planting</button></lI>
           </ul>
+
         </div>
 
         <ul class="service__cards-list">
 
-          <li class="service__cards-item"> 
+          <li class="service__cards-item " data-set="garden">
             <img class="service__img"
               srcset="./images/service-desktop-01.jpg 329w, ./images/service-desktop-01@2x.jpg 658w"
-              sizes="(min-width: 1440px) 329px, 100vw" src="./images/service-desktop-01.jpg" width="329" height="350" alt="Garden">
+              sizes="(min-width: 1440px) 329px, 100vw" src="./images/service-desktop-01.jpg" width="329" height="350"
+              alt="Garden">
             <div class="service__cards-describe">
               <h3 class="service__card-title">Garden care</h3>
-              <p class="service__card-title">Lorem Ipsum has been the industry</p>
+              <p class="service__card-text">Lorem Ipsum has been the industry</p>
             </div>
 
           </li>
-          <li class="service__cards-item">
+          <li class="service__cards-item " data-set="planting">
             <img class="service__img"
               srcset="./images/service-desktop-02.jpg 329w, ./images/service-desktop-02@2x.jpg 658w"
               sizes="(min-width: 1440px) 329px, 100vw" src="./images/service-desktop-02.jpg" width="329" height="350"
@@ -166,7 +164,7 @@
               <p class="service__card-text">Lorem Ipsum has been the industry</p>
             </div>
           </li>
-          <li class="service__cards-item">
+          <li class="service__cards-item " data-set="lawn">
             <img class="service__img"
               srcset="./images/service-desktop-03.jpg 329w, ./images/service-desktop-03@2x.jpg 658w"
               sizes="(min-width: 1440px) 329px, 100vw" src="./images/service-desktop-03.jpg" width="329" height="350"
@@ -176,7 +174,7 @@
               <p class="service__card-text">Lorem Ipsum has been the industry</p>
             </div>
           </li>
-          <li class="service__cards-item">
+          <li class="service__cards-item " data-set="planting">
             <img class="service__img"
               srcset="./images/service-desktop-04.jpg 329w, ./images/service-desktop-04@2x.jpg 658w"
               sizes="(min-width: 1440px) 329px, 100vw" src="./images/service-desktop-04.jpg" width="329" height="350"
@@ -186,7 +184,7 @@
               <p class="service__card-text">Lorem Ipsum has been the industry</p>
             </div>
           </li>
-          <li class="service__cards-item">
+          <li class="service__cards-item " data-set="garden">
             <img class="service__img"
               srcset="./images/service-desktop-05.jpg 329w, ./images/service-desktop-05@2x.jpg 658w"
               sizes="(min-width: 1440px) 329px, 100vw" src="./images/service-desktop-05.jpg" width="329" height="350"
@@ -196,7 +194,7 @@
               <p class="service__card-text">Lorem Ipsum has been the industry</p>
             </div>
           </li>
-          <li class="service__cards-item">
+          <li class="service__cards-item " data-set="planting">
             <img class="service__img"
               srcset="./images/service-desktop-06.jpg 329w, ./images/service-desktop-06@2x.jpg 658w"
               sizes="(min-width: 1440px) 329px, 100vw" src="./images/service-desktop-06.jpg" width="329" height="350"
@@ -215,27 +213,89 @@
 
         <div class="prices__filter">
           <h2 class="prices__title">Prices</h2>
+
           <ul class="prices__button-list">
             <li class="prices__button-item">
-              <p class="prices__button-title">Basics</p>
-              <button type="button" class="prices__button-dropdown" aria-label="open drop-down menu">
-                <svg
-                  class="prices__button-icon" width="8" height="8">
-                  <use href="./images/icons.svg#icon-arrow"></use>
-                </svg>
-              </button>
+
+              <div class="prices__button-item--close">
+                <p class="prices__button-title">Basics</p>
+                <button type="button" class="prices__button-dropdown" aria-label="open drop-down menu"
+                  data-name="basic">
+                  <svg class="prices__button-icon" width="8" height="8" data-name="basic">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="dropdawn-card" data-name="basic">
+                <div class="dropdawn-card__top">
+                </div>
+                <p class="dropdawn-card__bottom-text">
+                  Release of Letraset sheets containing Lorem Ipsum passages,
+                  and more recently
+                </p>
+                <p class="dropdawn-card__price">
+                  $15 <span class="dropdawn-card__time">/ per hour</span>
+                </p>
+                <button type="button" class="dropdawn-card__button" data-name="basic">
+                  Order
+                </button>
+              </div>
+
             </li>
             <li class="prices__button-item">
-              <p class="prices__button-title">Standard</p><button type="button" class="prices__button-dropdown" aria-label="open dropdown menu"><svg
-                  class="prices__button-icon" width="8" height="8">
-                  <use href="./images/icons.svg#icon-arrow"></use>
-                </svg></button>
+              <div class="prices__button-item--close">
+                <p class="prices__button-title">Standard</p>
+                <button type="button" class="prices__button-dropdown" aria-label="open dropdown menu"
+                  data-name="standard">
+                  <svg class="prices__button-icon" width="8" height="8" data-name="standard">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                  </svg></button>
+              </div>
+
+              <div class="dropdawn-card" data-name="standard">
+                <div class="dropdawn-card__top">
+
+                </div>
+                <p class="dropdawn-card__bottom-text">
+                  Release of Letraset sheets containing Lorem Ipsum passages,
+                  and more recently
+                </p>
+                <p class="dropdawn-card__price">
+                  $25 <span class="dropdawn-card__time">/ per hour</span>
+                </p>
+                <button type="button" class="dropdawn-card__button" data-name="standard">
+                  Order
+                </button>
+              </div>
+
             </li>
             <li class="prices__button-item">
-              <p class="prices__button-title">Pro care</p><button type="button" class="prices__button-dropdown" aria-label="open dropdown menu"><svg
-                  class="prices__button-icon" width="8" height="8">
-                  <use href="./images/icons.svg#icon-arrow"></use>
-                </svg></button>
+              <div class="prices__button-item--close">
+                <p class="prices__button-title">Pro care</p>
+                <button type="button" class="prices__button-dropdown" aria-label="open dropdown menu"
+                  data-name="procare">
+                  <svg class="prices__button-icon" width="8" height="8" data-name="procare">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                  </svg></button>
+              </div>
+
+
+              <div class="dropdawn-card" data-name="procare">
+                <div class="dropdawn-card__top">
+
+                </div>
+                <p class="dropdawn-card__bottom-text">
+                  Release of Letraset sheets containing Lorem Ipsum passages,
+                  and more recently
+                </p>
+                <p class="dropdawn-card__price">
+                  $35 <span class="dropdawn-card__time">/ per hour</span>
+                </p>
+                <button type="button" class="dropdawn-card__button" data-name="procare">
+                  Order
+                </button>
+              </div>
             </li>
           </ul>
         </div>
@@ -252,41 +312,165 @@
     </section>
     <section id="contacts" class='contacts'>
       <div class="container">
+        <h2 class="contacts__title">Contact us</h2>
 
         <div class="contacts__describe">
-          <h2 class="contacts__title">Contact us</h2>
 
-          <div class="contacts__box-overlay">
-            <p class="contacts__overlay-name">City</p>
-            <button type="button" class="contacts__overlay-button" aria-label="open dropdown menu">
-              <svg class="contacts__button-icon" width="4" height="3">
-                <use href="./images/icons.svg#icon-arrow"></use>
-              </svg>
-            </button>
+          <div class="contacts__pos-relat">
+            <div class="contacts__box-overlay">
+              <p class="contacts__overlay-name">City</p>
+              <button type="button" class="contacts__overlay-button" aria-label="open dropdown menu">
+                <svg class="contacts__button-icon" width="4" height="3">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
 
-            <ul class="contacts__overlay-city">
-              <li class="contacts__overlay-item">
-                <p class="contacts__overlay-text">Canandaigua, NY</p>
-              </li>
-              <li class="contacts__overlay-item">
-                <p class="contacts__overlay-text">New York City</p>
-              </li>
-              <li class="contacts__overlay-item">
-                <p class="contacts__overlay-text">Yonkers, NY</p>
-              </li>
-              <li class="contacts__overlay-item">
-                <p class="contacts__overlay-text">Sherrill, NY</p>
-              </li>
-            </ul>
+              <ul class="contacts__overlay-city">
+                <li class="contacts__overlay-item">
+                  <p class="contacts__overlay-text" data-name="canandaigua">Canandaigua, NY</p>
+                </li>
+                <li class="contacts__overlay-item">
+                  <p class="contacts__overlay-text" data-name="newYork">New York City</p>
+                </li>
+                <li class="contacts__overlay-item">
+                  <p class="contacts__overlay-text" data-name="yonkers">Yonkers, NY</p>
+                </li>
+                <li class="contacts__overlay-item">
+                  <p class="contacts__overlay-text" data-name="sherrill">Sherrill, NY</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contacts__table">
+              <div class="contacts__card-detail" data-name="canandaigua">
+                <table class="contacts__card-detail--table">
+                  <tbody>
+                    <tr class="contacts__card-detail--row">
+                      <td class="contacts__card-detail--column-one">City:</td>
+                      <td class="contacts__card-detail--column-two">
+                        Canandaigua, NY
+                      </td>
+                    </tr>
+                    <tr class="contacts__card-detail--row">
+                      <td class="contacts__card-detail--column-one">Phone:</td>
+                      <td class="contacts__card-detail--column-two">
+                        +1 585 393 0001
+                      </td>
+                    </tr>
+                    <tr class="contacts__card-detail--row">
+                      <td class="contacts__card-detail--column-one">
+                        Office adress:
+                      </td>
+                      <td class="contacts__card-detail--column-two">
+                        151 Charlotte Street
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+
+                <a class="contacts__card-detail--button" href="tel:+15853930001">
+                  Call us
+                </a>
+              </div>
+
+              <div class="contacts__card-detail" data-name="newYork">
+                <table class="contacts__card-detail--table">
+                  <tbody>
+                    <tr class="contacts__card-detail--row">
+                      <td class="contacts__card-detail--column-one">City:</td>
+                      <td class="contacts__card-detail--column-two">
+                        New York City
+                      </td>
+                    </tr>
+                    <tr class="contacts__card-detail--row">
+                      <td class="contacts__card-detail--column-one">Phone:</td>
+                      <td class="contacts__card-detail--column-two">
+                        +1 212 456 0002
+                      </td>
+                    </tr>
+                    <tr class="contacts__card-detail--row">
+                      <td class="contacts__card-detail--column-one">
+                        Office adress:
+                      </td>
+                      <td class="contacts__card-detail--column-two">
+                        9 East 91st Street
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a class="contacts__card-detail--button" href="tel:+12124560002">
+                  Call us
+                </a>
+              </div>
+
+
+              <div class="contacts__card-detail" data-name="yonkers">
+                <table class="contacts__card-detail--table">
+                  <tbody>
+                    <tr class="contacts__card-detail--row">
+                      <td class="contacts__card-detail--column-one">City:</td>
+                      <td class="contacts__card-detail--column-two">Yonkers, NY</td>
+                    </tr>
+                    <tr class="contacts__card-detail--row">
+                      <td class="contacts__card-detail--column-one">Phone:</td>
+                      <td class="contacts__card-detail--column-two">
+                        +1 914 678 0003
+                      </td>
+                    </tr>
+                    <tr class="contacts__card-detail--row">
+                      <td class="contacts__card-detail--column-one">
+                        Office adress:
+                      </td>
+                      <td class="contacts__card-detail--column-two">
+                        511 Warburton Ave
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a class="contacts__card-detail--button" href="tel:+19146780003">
+                  Call us
+                </a>
+              </div>
+
+              <div class="contacts__card-detail" data-name="sherrill">
+                <table class="contacts__card-detail--table">
+                  <tbody>
+                    <tr class="contacts__card-detail--row">
+                      <td class="contacts__card-detail--column-one">City:</td>
+                      <td class="contacts__card-detail--column-two">Sherrill, NY</td>
+                    </tr>
+                    <tr class="contacts__card-detail--row">
+                      <td class="contacts__card-detail--column-one">Phone:</td>
+                      <td class="contacts__card-detail--column-two">
+                        +1 315 908 0004
+                      </td>
+                    </tr>
+                    <tr class="contacts__card-detail--row">
+                      <td class="contacts__card-detail--column-one">
+                        Office adress:
+                      </td>
+                      <td class="contacts__card-detail--column-two">
+                        14 WEST Noyes BLVD
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a class="contacts__card-detail--button" href="tel:+13159080004">
+                  Call us
+                </a>
+              </div>
+
+            </div>
           </div>
 
+
+
+          <img class="contacts__img" srcset="./images/contact_woman.png 464w, ./images/contact_woman@2x.png 928w"
+            sizes="(min-width: 1440px) 464px, 100vw" src="./images/contact_woman.png" width="400" height="497"
+            alt="woman">
+
         </div>
-
-        <img srcset="./images/contact_woman.png 464w, ./images/contact_woman@2x.png 928w"
-        sizes="(min-width: 1440px) 464px, 100vw" src="./images/contact_woman.png" width="400" height="497"
-        alt="woman">
-
-      </div>
     </section>
   </main>
 
@@ -338,6 +522,12 @@
   </footer>
   <script defer src="./js/mobile-menu.js"></script>
   <script defer src="./js/index.js"></script>
+  <script defer src="./js/detail-contact.js"></script>
+  <script defer src="./js/prices.js"></script>
+  <script defer src="./js/select-blur.js"></script>
+
+
+
 </body>
 
 </html>
